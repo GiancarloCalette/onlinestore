@@ -1,7 +1,7 @@
 var catalog = [
     {
         "title":"Motor",
-        "category":"engineering",
+        "category":"motion",
         "price":200,
         "image":"motor.jpg",
         "_id":"1",
@@ -9,7 +9,7 @@ var catalog = [
 
     {
         "title":"Servo",
-        "category":"engineering",
+        "category":"motion",
         "price":2000,
         "image":"servo.jpg",
         "_id":"2",
@@ -17,7 +17,7 @@ var catalog = [
 
     {
         "title":"Cable",
-        "category":"engineering",
+        "category":"cables",
         "price":100,
         "image":"servo-cable.jpg",
         "_id":"3",
@@ -25,7 +25,7 @@ var catalog = [
 
     {
         "title":"Encoder",
-        "category":"engineering",
+        "category":"sensors",
         "price":20,
         "image":"encoder.jpg",
         "_id":"4",
@@ -33,7 +33,7 @@ var catalog = [
 
     {
         "title":"Servo drive",
-        "category":"engineering",
+        "category":"electronics",
         "price":500,
         "image":"servo-drive.jpg",
         "_id":"5",
@@ -41,7 +41,7 @@ var catalog = [
 
     {
         "title":"AC drive",
-        "category":"engineering",
+        "category":"electronics",
         "price":300,
         "image":"ac-drive.jpg",
         "_id":"6",
@@ -49,7 +49,7 @@ var catalog = [
 
     {
         "title":"PLC Safety Guard",
-        "category":"engineering",
+        "category":"controllers",
         "price":7000,
         "image":"plc-safety.jpg",
         "_id":"7",
@@ -57,7 +57,7 @@ var catalog = [
 
     {
         "title":"Ethernet Switch",
-        "category":"engineering",
+        "category":"switches",
         "price":700,
         "image":"ethernet-switch.jpg",
         "_id":"8",

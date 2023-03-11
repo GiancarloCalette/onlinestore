@@ -22,3 +22,11 @@
     width: 200px;
     height: 180px;
 }
+
+@media (max-width: 400px) {
+    .product{
+        width: 85%;
+        margin-left: 2%;
+        height: auto;
+    }
+}
