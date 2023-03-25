@@ -9,6 +9,7 @@ import About from './pages/about';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
 import Cart from './pages/cart';
+import Admin from './pages/admin';
 
 function App() {
   return (
@@ -19,8 +20,9 @@ function App() {
         <Routes>
             <Route path='/' element={<Home></Home>}></Route>
             <Route path='/catalog' element={<Catalog></Catalog>}></Route>
-            <Route path='/' element={<About></About>}></Route>
+            <Route path='/about' element={<About></About>}></Route>
             <Route path='/' element={<Cart></Cart>}></Route>
+            <Route path='/admin' element={<Admin></Admin>}></Route>
         </Routes>
         <Footer></Footer>
       </BrowserRouter>

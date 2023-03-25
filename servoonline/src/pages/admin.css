@@ -1,0 +1,33 @@
+.admin {
+  background-color: aliceblue;
+  min-height: 85vh;
+}
+
+.admin main {
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+}
+
+.admin #products {
+  flex: 2;
+  background-color: white;
+  padding: 5px 10px;
+  border: 1px solid whitesmoke;
+  margin-right: 20px;
+  border-radius: 4px;
+  max-width: 400px;
+}
+
+.admin #coupons {
+  flex: 1;
+  background-color: white;
+  padding: 5px 10px;
+  margin-right: 20px;
+  border-radius: 4px;
+  max-width: 300px;
+}
+
+.admin form {
+  text-align: left;
+}

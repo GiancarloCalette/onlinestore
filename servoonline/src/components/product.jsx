@@ -15,6 +15,9 @@ function Product(props){
         let total = props.data.price * quantity;
         return total.toFixed(2);        
     }
+    function handleAddClick(){
+        console.log("Hello");
+    }
     return(
         <div className="product">
             <h5>{props.data.title}</h5>
@@ -25,7 +28,7 @@ function Product(props){
             </div>
             <div className="controls">
                 <QuantityPicker onChange={onQuantityChange}></QuantityPicker>
-                <button type="button" className="btn btn-info"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                <button type="button" className="btn btn-info" onClick={handleAddClick}><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
             </div>
             
         </div>
