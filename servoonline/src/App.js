@@ -4,14 +4,27 @@ import Navbar from './components/navbar';
 import Catalog from './pages/catalog';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
+import Home from './pages/home';
+import About from './pages/about';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import 'font-awesome/css/font-awesome.min.css';
+import Cart from './pages/cart';
 
 function App() {
   return (
     <div className="App">
       <h1>Hello from react</h1>
-      <Navbar></Navbar>
-      <Catalog></Catalog>
-      <Footer></Footer>
+      <BrowserRouter>
+        <Navbar></Navbar>
+        <Routes>
+            <Route path='/' element={<Home></Home>}></Route>
+            <Route path='/catalog' element={<Catalog></Catalog>}></Route>
+            <Route path='/' element={<About></About>}></Route>
+            <Route path='/' element={<Cart></Cart>}></Route>
+        </Routes>
+        <Footer></Footer>
+      </BrowserRouter>
+
     </div>
   );
 }

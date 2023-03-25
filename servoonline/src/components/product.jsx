@@ -20,11 +20,14 @@ function Product(props){
             <h5>{props.data.title}</h5>
             <img src={"/img/" + props.data.image} alt=""/>
             <div className="prices">
-                <label>Price$ {props.data.price.toFixed(2)}</label>
-                <label>Total {getTotal()}</label>
+                <label>Total ${getTotal()}</label>
+                <label>Price ${props.data.price.toFixed(2)}</label>
             </div>
-            <QuantityPicker onChange={onQuantityChange}></QuantityPicker>
-            <button type="button" className="btn btn-info">Add</button>
+            <div className="controls">
+                <QuantityPicker onChange={onQuantityChange}></QuantityPicker>
+                <button type="button" className="btn btn-info"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+            </div>
+            
         </div>
     );
 }

@@ -1,0 +1,15 @@
+.About {
+    min-height: 95vh;
+    background-color: aliceblue;
+    padding-top: 50px;
+}
+
+.About h1 {
+    text-align: center;
+    color: blue;
+}
+
+.About h5 {
+    text-align: center;
+    color: bisque;
+}

@@ -23,6 +23,21 @@
     height: 180px;
 }
 
+.product .controls {
+    display: flex;
+    padding-top: 10px;
+    border-top: 1px solid rgb(132, 128, 128);
+
+}
+
+.product .controls div{
+    flex: 5;
+}
+.product .controls > button{
+    flex: 1;
+    margin-right: 20px;
+}
+
 @media (max-width: 400px) {
     .product{
         width: 85%;

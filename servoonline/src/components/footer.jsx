@@ -1,7 +1,8 @@
+import "./footer.css"
 function Footer(){
     return(
         <div>
-            <label>Giancarlo Calette</label>
+            <label>Servo store, the best store in servos</label>
         </div>
     );
 }
