@@ -9,3 +9,15 @@
     margin-bottom: 20px;
     color: black;
 }
+
+.Cart .parent {
+    display: flex;
+}
+
+.Cart .products {
+    flex: 4;
+}
+
+.Cart .total {
+    flex: 1;
+}

@@ -1,13 +1,25 @@
 import "./navbar.css";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import globalContext from "../state/globalContext";
 function Navbar() {
+  const numOfProds = useContext(globalContext).getNumberOfProducts;
+
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           ServoOnline
         </Link>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -34,9 +46,10 @@ function Navbar() {
             </li>
           </ul>
           <form className="d-flex" role="search">
-            <Link className="btn btn-outline-success" to="/cart">
-            <i className="fa fa-shopping-cart" aria-hidden="true"></i>
-            Cart
+            <Link className="btn btn-outline-success position-relative" to="/cart">
+              <span className="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-success">{numOfProds()}</span>
+              <i className="fa fa-shopping-cart" aria-hidden="true"></i>
+              Cart
             </Link>
           </form>
         </div>
