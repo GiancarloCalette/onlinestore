@@ -1,5 +1,7 @@
 import "./admin.css";
 import { useState } from "react";
+import DataService from "../dataServices/dataService";
+
 function Admin() {
     const [product, setProduct] = useState({});
     const [coupon, setCoupon] = useState({});
@@ -20,7 +22,17 @@ function Admin() {
       setCoupon(copy);
     }
     function saveProduct(){
-        console.log(product);
+      console.log(product);
+      let copy = {...product};
+      copy.price = parseFloat(copy.price);
+      let service = new DataService();
+      service.saveProduct(copy);
+      setProduct({
+        title: '',
+        image: '',
+        category: '',
+        price: '',
+      });
     }
     function saveCoupon(){
       console.log(coupon);
@@ -34,19 +46,19 @@ function Admin() {
           <form>
             <div className="mb-3">
               <label className="form-label">Title</label>
-              <input name="title" onChange={handleTextChange} type="text" className="form-control"></input>
+              <input name="title" value={product.title} onChange={handleTextChange} type="text" className="form-control"></input>
             </div>
             <div className="mb-3">
               <label className="form-label">Category</label>
-              <input name="category" onChange={handleTextChange} type="text" className="form-control"></input>
+              <input name="category" value={product.category} onChange={handleTextChange} type="text" className="form-control"></input>
             </div>
             <div className="mb-3">
               <label className="form-label">Image name</label>
-              <input name="image" onChange={handleTextChange} type="text" className="form-control"></input>
+              <input name="image" value={product.image} onChange={handleTextChange} type="text" className="form-control"></input>
             </div>
             <div className="mb-3">
               <label className="form-label">Price</label>
-              <input name="price" onChange={handleTextChange} type="text" className="form-control"></input>
+              <input name="price" value={product.price} onChange={handleTextChange} type="text" className="form-control"></input>
             </div>
             <div className="mb-3">
               <button type="button" onClick={saveProduct} className="btn btn-info">Save product</button>

@@ -11,9 +11,9 @@ function Catalog(){
     useEffect(function(){
         loadCatalog();
     }, []);
-    function loadCatalog(){
+    async function loadCatalog(){
         let service = new DataService();
-        let prods = service.getProducts();
+        let prods = await service.getProducts();
         console.log(prods);
         setProducts(prods);
         let cats=["motion","cables","sensors","electronics","controllers","switches"];
