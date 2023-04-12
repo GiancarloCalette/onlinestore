@@ -46,8 +46,8 @@ function Navbar() {
             </li>
           </ul>
           <form className="d-flex" role="search">
-            <Link className="btn btn-outline-success position-relative" to="/cart">
-              <span className="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-success">{numOfProds()}</span>
+            <Link className="btn btn-outline-dark position-relative" to="/cart">
+              <span className="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger">{numOfProds()}</span>
               <i className="fa fa-shopping-cart" aria-hidden="true"></i>
               Cart
             </Link>

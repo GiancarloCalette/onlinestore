@@ -61,7 +61,7 @@ function Admin() {
               <input name="price" value={product.price} onChange={handleTextChange} type="text" className="form-control"></input>
             </div>
             <div className="mb-3">
-              <button type="button" onClick={saveProduct} className="btn btn-info">Save product</button>
+              <button type="button" onClick={saveProduct} className="btn btn-dark">Save product</button>
             </div>
           </form>
         </section>
@@ -78,7 +78,7 @@ function Admin() {
               <input name="discount" onChange={handleCouponTextChange} type="text" className="form-control"></input>
             </div>
             <div className="mb-3">
-              <button type="button" onClick={saveCoupon} className="btn btn-info">Save product</button>
+              <button type="button" onClick={saveCoupon} className="btn btn-dark">Save product</button>
             </div>
           </form>
         </section>

@@ -18,8 +18,8 @@ function Cart() {
 
   return (
     <div className="Cart">
-      <h1>Are you ready yo get products!</h1>
-      <h5>You have {numOfProds()} items in the cart</h5>
+      <h1>Shopping Cart</h1>
+      <h5>Subtotal {numOfProds()} items</h5>
       <div className="parent">
         <div className="products">
           {cart.map((prod) => (
@@ -31,7 +31,7 @@ function Cart() {
           <h4>Total</h4>
           <h5>${getTotalToPay()}</h5>
 
-          <button className="btn btn-primary">Checkout now</button>
+          <button className="btn btn-dark">Checkout now</button>
         </div>
       </div>
     </div>

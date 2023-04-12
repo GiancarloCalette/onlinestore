@@ -1,4 +1,12 @@
 .catalog{
-    background-color: azure;
+    background-color:#f7f6f6;
     min-height: 90vh;
+}
+
+.btn{
+    margin: 2px;
+}
+
+.catalog h3{
+    font-weight: 100;
 }

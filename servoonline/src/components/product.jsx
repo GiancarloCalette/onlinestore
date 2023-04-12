@@ -31,7 +31,7 @@ function Product(props){
 
     return(
         <div className="product">
-            <h5>{props.data.title}</h5>
+            <h6>{props.data.title}</h6>
             <img src={"/img/" + props.data.image} alt=""/>
             <div className="prices">
                 <label>Total ${getTotal()}</label>
@@ -39,7 +39,7 @@ function Product(props){
             </div>
             <div className="controls">
                 <QuantityPicker onChange={onQuantityChange}></QuantityPicker>
-                <button type="button" className="btn btn-info" onClick={handleAddClick}><i className="fa fa-cart-plus" aria-hidden="true"></i></button>
+                <button type="button" className="btn btn-light" onClick={handleAddClick}><i className="fa fa-cart-plus" aria-hidden="true"></i></button>
             </div>
             
         </div>

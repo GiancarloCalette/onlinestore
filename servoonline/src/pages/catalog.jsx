@@ -16,7 +16,7 @@ function Catalog(){
         let prods = await service.getProducts();
         console.log(prods);
         setProducts(prods);
-        let cats=["motion","cables","sensors","electronics","controllers","switches"];
+        let cats=["Connection Devices","Drives","Human Machine Interface (HMI)","Input/Output Modules","Motion Control","Network Security & Interface","Power Supplies","Programable Controllers","Push Buttons & Signaling Devices","Safety Products", "Sensors & Switches"];
         setCategory(cats);
         setProdsToDisplay(prods);
     }
@@ -36,11 +36,12 @@ function Catalog(){
     }
     return(
         <div className="catolog">
-            <h1>Hello check our stuff</h1>
-            <h5>We have {products.length} new products for you</h5>
+            <h1>Global Leader in Industrial Automation</h1>
+            <h3>Increase productivity and efficiency with your operations</h3>
+            <h5>We have {products.length} products available</h5>
             <br></br>
-            <button onClick={clearFilter} className="btn btn-success btn-filter">All</button>
-            {category.map((c) => <button key = {c} onClick={()=>filter(c)}className="btn btn-success btn-filter">{c}</button>)}
+            <button onClick={clearFilter} className="btn btn-danger btn-filter">All</button>
+            {category.map((c) => <button key = {c} onClick={()=>filter(c)}className="btn btn-danger btn-filter">{c}</button>)}
             <br></br>
             {prodsToDisplay.map((p) => (
                 <Product key={p._id} data = {p}></Product>

@@ -1,8 +1,15 @@
 .Home {
-    background: aliceblue;
+    background: #f7f6f6;
 }
 .Home h1 {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+.Home h4{
+    font-weight: 300;
+}
+.Home .cards{
+    display: flex;
+    justify-content: center;
 }

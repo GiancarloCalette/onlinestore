@@ -1,15 +1,26 @@
 .About {
     min-height: 95vh;
-    background-color: aliceblue;
+    background-color: #f7f6f6;
     padding-top: 50px;
 }
 
 .About h1 {
     text-align: center;
-    color: blue;
+    color: #003249;
+}
+
+.About h3 {
+    text-align: center;
+    color: #003249;
+    font-weight: 300;
 }
 
 .About h5 {
     text-align: center;
     color: bisque;
+}
+
+.content{
+    justify-content: center;
+    display: flex;
 }
